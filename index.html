@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>Dangdut Name Generator</h1>
-        <form id="name-form">
+        <form id="name-form" method="post">
             <label for="day">Tanggal Lahir (1-31):</label>
             <input type="number" name="day" id="day" min="1" max="31" required>
             
@@ -23,9 +23,9 @@
                 <option value="P">Perempuan</option>
             </select>
             
-            <button type="button" id="generate-button">Generate Nama Dangdut</button>
+            <button type="submit">Generate Nama Dangdut</button>
         </form>
-        <div id="result"></div>
+        <h2 id="result"></h2>
     </div>
 </body>
 </html>
