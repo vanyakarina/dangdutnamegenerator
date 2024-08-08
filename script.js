@@ -1,5 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('generate-button').addEventListener('click', function() {
+    document.getElementById('name-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent the form from submitting normally
+
         const day = parseInt(document.getElementById('day').value);
         const month = parseInt(document.getElementById('month').value);
         const gender = document.getElementById('gender').value;
