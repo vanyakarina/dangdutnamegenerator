@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dangdut Name Generator</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <h1>Dangdut Name Generator</h1>
-        <form method="post">
+        <form id="name-form">
             <label for="day">Tanggal Lahir (1-31):</label>
             <input type="number" name="day" id="day" min="1" max="31" required>
             
@@ -22,11 +23,9 @@
                 <option value="P">Perempuan</option>
             </select>
             
-            <button type="submit">Generate Nama Dangdut</button>
+            <button type="button" id="generate-button">Generate Nama Dangdut</button>
         </form>
-        {% if fictional_name %}
-            <h2>Nama dangdut kamu adalah {{ fictional_name }}</h2>
-        {% endif %}
+        <div id="result"></div>
     </div>
 </body>
 </html>
